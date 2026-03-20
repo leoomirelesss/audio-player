@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: #f7f2e8;
+  color: #151515;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(66, 99, 235, 0.2);
+}
+
+
+@layer utilities {
+  .animation-ready {
+    will-change: transform, opacity;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
