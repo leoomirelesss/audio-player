@@ -7,11 +7,13 @@ import { GolemanSection } from '@/components/sections/goleman-section';
 import { HeroSection } from '@/components/sections/hero-section';
 import { SectionNavigator } from '@/components/sections/section-navigator';
 import { SiteBackground } from '@/components/layout/site-background';
+import { MotionEffects } from '@/components/layout/motion-effects';
 
 export default function Home() {
   return (
     <main id="top" className="relative min-h-screen overflow-x-clip text-ink">
       <SiteBackground />
+      <MotionEffects />
       <div className="relative">
         <SectionNavigator />
         <HeroSection />

@@ -12,6 +12,7 @@ export function ExamplesSection() {
       <div className="space-y-5">
         {practicalExamples.map((example, index) => (
           <article
+            data-cursor="highlight"
             key={example.title}
             className="grid gap-5 rounded-4xl border border-ink/10 bg-white/75 p-6 shadow-card md:grid-cols-[120px_1fr] md:items-start md:p-8"
           >

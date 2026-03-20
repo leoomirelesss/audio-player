@@ -17,7 +17,7 @@ export function DoodleOrb({ label, tone = 'blue', className }: DoodleOrbProps) {
   return (
     <div
       className={cn(
-        'group relative flex aspect-square w-36 items-center justify-center rounded-[34%] border border-white/70 bg-gradient-to-br p-4 shadow-soft transition-transform duration-500 hover:-translate-y-2',
+        'group relative flex aspect-square w-36 items-center justify-center rounded-[34%] border border-white/70 bg-gradient-to-br p-4 shadow-soft transition-[transform,box-shadow] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-3 hover:shadow-[0_22px_45px_rgba(44,37,22,0.18)]',
         toneClasses[tone],
         className,
       )}

@@ -17,6 +17,7 @@ export function SectionNavigator() {
         </span>
         {links.map(([label, href]) => (
           <a
+            data-cursor="highlight"
             key={href}
             href={href}
             className="rounded-full px-4 py-2 text-sm font-medium text-ink/62 transition-colors hover:bg-paper/90 hover:text-ink"
