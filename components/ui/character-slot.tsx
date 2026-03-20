@@ -9,6 +9,7 @@ type CharacterSlotProps = {
 export function CharacterSlot({ name, description, className }: CharacterSlotProps) {
   return (
     <div
+      data-cursor="media"
       className={cn(
         'relative overflow-hidden rounded-[2rem] border border-ink/10 bg-white/68 p-6 shadow-[0_24px_70px_rgba(44,37,22,0.10)] backdrop-blur-md md:p-7',
         className,

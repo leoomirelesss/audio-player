@@ -11,6 +11,7 @@ type InfoCardProps = {
 export function InfoCard({ title, body, icon, className }: InfoCardProps) {
   return (
     <article
+      data-cursor="highlight"
       className={cn(
         'group rounded-[2rem] border border-ink/10 bg-white/72 p-6 shadow-[0_20px_55px_rgba(44,37,22,0.08)] backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:border-ink/20 hover:shadow-soft md:p-7',
         className,
