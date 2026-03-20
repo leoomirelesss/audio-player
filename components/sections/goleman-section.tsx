@@ -13,7 +13,7 @@ export function GolemanSection() {
         {golemanComponents.map((item, index) => (
           <article
             key={item.title}
-            className="group relative overflow-hidden rounded-4xl border border-ink/10 bg-white/75 p-6 shadow-card transition-all duration-500 hover:-translate-y-2 hover:shadow-soft lg:min-h-[24rem]"
+            className="group relative overflow-hidden rounded-4xl border border-ink/10 bg-white/75 p-6 shadow-card transition-[transform,box-shadow] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-3 hover:shadow-soft lg:min-h-[24rem]"
           >
             <div className="absolute inset-x-6 top-0 h-1 rounded-full bg-gradient-to-r from-accent-blue via-accent-coral to-accent-gold opacity-70" />
             <p className="text-sm uppercase tracking-[0.28em] text-ink/45">0{index + 1}</p>

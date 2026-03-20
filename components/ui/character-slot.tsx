@@ -11,7 +11,7 @@ export function CharacterSlot({ name, description, className }: CharacterSlotPro
     <div
       data-cursor="media"
       className={cn(
-        'relative overflow-hidden rounded-[2rem] border border-ink/10 bg-white/68 p-6 shadow-[0_24px_70px_rgba(44,37,22,0.10)] backdrop-blur-md md:p-7',
+        'relative overflow-hidden rounded-[2rem] border border-ink/10 bg-white/68 p-6 shadow-[0_24px_70px_rgba(44,37,22,0.10)] backdrop-blur-md transition-[transform,box-shadow,border-color] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1.5 hover:shadow-[0_28px_80px_rgba(44,37,22,0.12)] md:p-7',
         className,
       )}
     >

@@ -12,9 +12,10 @@ export const sectionRevealDefaults: ScrollRevealConfig = {
   end: 'bottom 30%',
 };
 
-// Reserved for future GSAP timelines / ScrollTrigger wiring.
 export const animationHooks = {
   hero: 'data-animate-hero',
   reveal: 'data-animate-reveal',
   parallax: 'data-animate-parallax',
-};
+} as const;
+
+export const premiumEase = 'cubic-bezier(0.22, 1, 0.36, 1)';
